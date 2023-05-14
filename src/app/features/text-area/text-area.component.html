@@ -1,1 +1,8 @@
-<p>text-area works!</p>
+<div id="textArea">
+    <label for="data">{{title}}: </label>
+
+    <textarea   id="data"
+                rows="{{rows || defaultRows}}" cols="{{cols || defaultCols}}">
+{{placeholderText}}
+    </textarea>
+</div>
