@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-canvas',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./canvas.component.css']
 })
 export class CanvasComponent {
+
+  @ViewChild('canvas') canvas !: ElementRef<HTMLCanvasElement>;
+
+
+
+  ngAfterViewInit() : void {
+
+  }
 
 }

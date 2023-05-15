@@ -1,2 +1,13 @@
-<app-text-area [title]="'Input format'" [rows]="2"></app-text-area>
-<app-text-area [title]="'Graph data'" [placeholderText]="'Paste your graph input data here!'"></app-text-area>
+<app-header></app-header>
+
+<div id="main_container">
+    <div id="left_pane">
+        <app-text-area [title]="'Input format'" [rows]="1" [placeholderText]="'Ex.: A -> B'"></app-text-area>
+        <app-text-area [title]="'Graph data'" [placeholderText]="'Paste your graph input data here!'"></app-text-area>
+    </div>
+    <div id="right_pane">
+        <app-canvas></app-canvas>
+    </div>
+</div>
+
+<app-footer></app-footer>
